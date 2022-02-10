@@ -1,0 +1,16 @@
+{
+  "contracts": {
+    "FundMe": "999c9d328f94cbb72725534b85ae353932861377",
+    "MockV3Aggregator": "9e734e161b5cafcca52a917f10266f5a8bc05b28"
+  },
+  "tests": {
+    "tests/test_fund_me.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "Fs",
+      "sha1": "c083caae4d2e4da3460e0e757772ea0b6daaa7d2",
+      "txhash": []
+    }
+  },
+  "tx": {}
+}
