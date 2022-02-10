@@ -1,4 +1,4 @@
-This brownie project implements the following features:
+📍 This brownie project implements the following features:
 - the person deploying the contract is remembered as its owner
 - people can fund the contract (minimum amount of participation of 50$ is enforced)
 - the contract's owner can then withdraw the funds
