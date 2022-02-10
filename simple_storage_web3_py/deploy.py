@@ -1,3 +1,9 @@
+# /deploy.py
+#
+# Deploying our Simple Storage contract with web3.py. This is a lengthy process but it allows to understand wweb3.py on which Brownie is built.
+# @ author: Anton Sirgue
+# @ version: 22/01/2022
+
 from solcx import compile_standard, install_solc
 from web3 import Web3
 import json

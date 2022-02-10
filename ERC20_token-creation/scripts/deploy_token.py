@@ -1,3 +1,9 @@
+# /scripts/deploy_token.py
+#
+# Deploying our Smart Contract to the chain.
+# @ author: Anton Sirgue
+# @ version: 22/01/2022
+
 from brownie import OurToken
 from scripts.helpful_scripts import get_account
 from web3 import Web3

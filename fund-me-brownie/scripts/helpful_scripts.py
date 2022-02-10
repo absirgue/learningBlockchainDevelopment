@@ -1,6 +1,11 @@
-from brownie import network, config, accounts, MockV3Aggregator
+# /scripts/helpful_scripts.py
+#
+# Heplers for deploy.py allowing to use the right account and to deploy the right mocks depending on whether we are testing on a local chain or a testnet or 
+# deploying to a real net.
+# @ author: Anton Sirgue
+# @ version: 22/01/2022
 
-# from web3 import Web3 this was to convert proprely 2000 ether to Wei but we don't do it anymore bcs of the way opur contract is set up, we need to mimick it with out mock
+from brownie import network, config, accounts, MockV3Aggregator
 
 FORKED_LOCAL_ENVIRONMENTS = ["mainnet-fork", "mainnet-fork-dev"]
 LOCAL_BLOCKCHAIN_ENVIRONMENTS = [

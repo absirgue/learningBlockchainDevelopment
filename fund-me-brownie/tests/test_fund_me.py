@@ -1,3 +1,9 @@
+# /tests/test_fund_me.py
+#
+# Basic testing on our contract's ability to perform on set specifications.
+# @ author: Anton Sirgue
+# @ version: 22/01/2022
+
 from scripts.helpful_scripts import get_account, LOCAL_BLOCKCHAIN_ENVIRONMENTS
 from scripts.deploy import deploy_fund_me
 from brownie import network, accounts, exceptions

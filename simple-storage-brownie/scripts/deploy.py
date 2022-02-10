@@ -1,20 +1,14 @@
+# /scripts/deploy.py
+#
+# Python script to deploy Simple Storage.
+# @ author: Anton Sirgue
+# @ version: 22/01/2022
+
 from brownie import accounts, config, SimpleStorage, network
 
 
 def deploySimpleStorage():
-    # spinning up a ganache account
-    # account = accounts[0]   <-- this works perfectly for spinning it into ganache
-    # print account
-
-    # accessing account registered with brownie
-    # account = accounts.load("testing-smartDev")
-    # print(account)
-
-    # for test nets where private key is an .env variable, it uses the brownioe-config.yaml
-    # account = accounts.add(config["wallets"]["from_key"])
-    # print(account)
-
-    # our first deployment:
+    #Deployment:
     account = get_account()
     simple_storage = SimpleStorage.deploy({"from": account})
     # Transact
@@ -25,7 +19,7 @@ def deploySimpleStorage():
     # Transaction
     transaction = simple_storage.store(15, {"from": account})
     transaction.wait(1)
-    # check if it worked
+    # Check if it worked
     updated_stored_value = simple_storage.retrieve()
     print(updated_stored_value)
 

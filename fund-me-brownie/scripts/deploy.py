@@ -1,3 +1,9 @@
+# /scripts/deploy.py
+#
+# Deploying our contract and mocks if they are needed (if we are testing on a local chain).
+# @ author: Anton Sirgue
+# @ version: 22/01/2022
+
 from brownie import MockV3Aggregator, FundMe, network, config
 from scripts.helpful_scripts import (
     get_account,
