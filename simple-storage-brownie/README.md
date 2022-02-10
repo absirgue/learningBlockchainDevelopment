@@ -1,0 +1,1 @@
+📍 Very basic project to learn to deploy a smart contract with brownie. The smart contract in itself is very simple and can only store and retrieve a number and store a number associated with a person's name and then retrieve the number corresponding to a specific name when asked to do so.
